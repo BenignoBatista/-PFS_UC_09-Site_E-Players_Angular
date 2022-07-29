@@ -1,0 +1,430 @@
+.jogos {
+    display: none;
+}
+
+.cabecalho {
+    background-color: #1E1C21;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-grid {
+    /* border: 1px solid salmon; */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+/* navbar */
+.menu-principal {
+    width: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu-principal a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    padding: 20px 15px 20px 15px;
+}
+
+.entrar {
+    background-color: #c31616;
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    }
+/*  ***********MAIN********** */
+/* .banner {
+    width: 100%;
+    height: 610px;
+    background-color: #c31616;
+    background-image: url(../images/banner_pilotos.png);
+    background-repeat: no-repeat;
+} */
+
+/* Caixa da Liga inscreva-se */
+.banner-box {
+    display: flex;
+    /* justify-content: flex-end;
+    align-items: center; */
+    /* height: 100% !important;
+    border: 5px solid red;  */
+}
+
+.banner-info {
+    position: absolute;
+    top: calc(30% - 50px);
+    left: calc(50% - 50px);
+    /* width: 100px;
+    height: 100px;
+    color: white; */
+    z-index: 100;
+    /* background-color: salmon; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 500px;
+    height: 280px;
+    /* border: 1px solid white; */
+}
+
+.banner-info h2 {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 80px;
+}
+
+.banner-info p {
+    font-family: "Roboto-Medium";
+    text-align: center;
+    font-size: 24px;
+    margin-top: -45px;
+}
+
+.banner-info a {
+    color: white;
+    font-size: 24px;
+    background-color: #c31616;
+    width: 270px;
+    height: 60px;
+    /* formas de alinhar o botão Inscreva-se */
+    /* align-self: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-inline: auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Jogos/Patrocinados */
+.jogos {
+    background-color: #1E1C21;
+}
+
+.jogos-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px
+}
+
+/* Produtos */
+.produtos {
+    background-color: #1E1C21;
+    padding: 40px;
+}
+
+.produtos h2{
+    font-size: 1.5rem;
+}
+
+.produtos
+.row {
+    margin: 0;
+    color: white;
+}
+
+/* Personalização do bootstrap */
+.container {
+    max-width: 1200px;
+}
+
+.btn-danger {
+   background-color: #c31616;
+   border: 1px solid #c31616;
+}
+
+.btn-danger:hover {
+    background-color: #c31515;
+    border: 1px solid #c31515 ;
+}
+
+.card {
+    max-width: 270px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+    background-image: linear-gradient(to bottom, #444444, #1e1c21);
+}
+.card .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-top: 10px;
+    text-transform: uppercase !important;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.3rem;
+}
+
+.card-price {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.5rem;
+}
+
+.info-test {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 100;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Como participar */
+.cparticiparbackground {
+    background-image: url(/assets/images/fundo-sobre.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #010101;
+}
+
+.comoparticiparbox{
+    display: flex;
+    align-items: center;
+    height:490px;
+    padding-left: 20px;
+    /* border: 1px solid #010101; */
+}
+
+.comoparticipar {
+    font-family: "Roboto-Medium"
+}
+
+/* .comoparticipartexto {
+    padding: 20px;
+} */
+
+/* Footer */
+.footer {
+    background-color: #010101;
+}
+
+.rodape {
+    max-width: 1200px;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.linksbox {
+    width: 240px;
+    height: 250px;
+    padding: 20px;
+}
+
+.linkstítulo {
+    font-size: 24px;
+    font-family: "TitilliumWeb-SemiBold";
+    color: white;
+}
+
+li {
+    font-family: "TitilliumWeb-SemiBold";
+    color: white;
+}
+
+.logotipobox{
+    width: 240px;
+    height: 250px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo2 {
+    width: 282px;
+    height: 29px;
+    padding: 2px;
+}
+
+.cadastroredes {
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.assinenewsletter{
+    font-size: 16px;
+    font-family: "TitilliumWeb-SemiBold";
+    color: white;
+}
+
+.cadastroemail{
+    flex-direction: row;
+}
+
+.email {
+    width: 195px;
+    height: 39px;
+    background-color: white;
+    font-size: 24px;
+    font-family: "TitilliumWeb-SemiBold";
+    color: #B8B3B3;
+    padding-left: 8px;
+}
+
+.cadastrar {
+    width: 156px;
+    height: 39px;
+    background-color: #001F70;
+    font-size: 24px;
+    font-family: "TitilliumWeb-SemiBold";
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.redesocial {
+color: white;
+font-size: 23px;
+font-family: "TitilliumWeb-SemiBold";
+}
+
+.logoinsta {
+    width: 47px;
+    height: 47px;
+}
+
+.logoface {
+    width: 53px;
+    height: 48px;
+}
+
+.logoyoutube {
+    width: 38x;
+    height: 38px;
+}
+
+/* Medias */
+
+/*Celular: 0 - 767px */
+/*Tablet: 768 - 991px */
+/*Desktop: >= 992px */
+
+
+/*Desktop: >= 992px */
+@media screen and (min-width: 992px){
+    .menu-bars{
+        display: none;
+    }
+}
+
+/*Tablet: 0 - 991px */
+@media screen and (max-width: 991px){
+    .cabecalho {
+        padding: 20px 25px;
+    }
+
+    .header-flex{
+        height: 60px;
+    }
+
+    .menu-bars{
+        width: 40px;
+        color: white;
+    }
+           
+    .navbarShow {
+        left: 0 !important;
+    }
+
+    .banner-box{
+        justify-content: center;
+    }
+
+    /* navbar */
+    .menu-principal {
+        position: fixed; /* viewport/janela */
+        top: 0px;
+        left: -80%;
+        z-index: 10;
+        z-index: 10;
+
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.95);
+        background-image: url(/assets/images/logo.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 100px;
+        background-size: 250px;
+        /* Já tem flexbox */
+        flex-direction: column;
+        justify-content: center;
+
+        transition: left 0.5s;
+    }
+
+    .menu-principal	a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 80%;
+        height: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+        border-left: 3px dotted white;
+        
+    }
+
+    .entrar {
+        background-color: rgba(0,0,0,0.8) !important;
+        font-weight: bold;
+    }
+}
+
+/*Celular: 0 - 767px */
+@media screen and (max-width: 767px){
+    .logotipo {
+        width: 150px;
+    }
+    
+    .menu-bars {
+        width: 25px;
+    }
+
+    .menu-principal a {
+        margin-bottom: 30px;
+        font-size: 1.0rem;
+    }
+   
+}

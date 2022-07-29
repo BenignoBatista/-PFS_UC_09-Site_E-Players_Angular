@@ -1,0 +1,11 @@
+<h1>Login</h1>
+
+<form action="" (ngSubmit)="recebeDados">
+    <label for="Nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" [(ngModel)]="userModel.nome">
+    
+    <label for="Senha">Nome</label>
+    <input type="password" id="senha" name="senha" placeholder="******" [(ngModel)]="userModel.senha">
+
+    <button>Login</button>
+</form>
