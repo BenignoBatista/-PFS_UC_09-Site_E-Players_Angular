@@ -1,11 +1,21 @@
-<h1>Login</h1>
+<!-- Login  Professor -->
+<div class="form-box">
 
-<form action="" (ngSubmit)="recebeDados">
-    <label for="Nome">Nome</label>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" [(ngModel)]="userModel.nome">
+    <!-- <h1>Login</h1> -->
+        <form action="" class="frm-login" (ngSubmit)="recebeDados()" >
+            <label for="nome">Nome de Usuário</label>
+            <input class="input-field" type="text" id="nome" placeholder="Login ou Email" required [(ngModel)]="userModel.nome" name="nome">
+            
+            <label for="senha">Senha</label>
+            <input class="input-field" type="password" id="senha" placeholder="****" required [(ngModel)]="userModel.senha" name="senha">
     
-    <label for="Senha">Nome</label>
-    <input type="password" id="senha" name="senha" placeholder="******" [(ngModel)]="userModel.senha">
-
-    <button>Login</button>
-</form>
+            <!-- <input class="input-field" type="text" id="cpf" placeholder="Seu cpf" required autocomplete="none"> -->
+    
+            <div class="linha">
+                <button class="btn-form" id="sign-in">Sign in</button>
+                <button class="btn-form" type="button">Sign out</button>
+            </div>
+    
+        </form>
+    </div>
+    
