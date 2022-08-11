@@ -2,12 +2,12 @@
 <div class="form-box">
 
     <!-- <h1>Login</h1> -->
-        <form action="" class="frm-login" (ngSubmit)="recebeDados()" >
-            <label for="nome">Nome de Usuário</label>
-            <input class="input-field" type="text" id="nome" placeholder="Login ou Email" required [(ngModel)]="userModel.nome" name="nome">
+        <form action="" class="frm-login" (ngSubmit)="logarUsuario()" >
+            <label for="email">Usuário</label>
+            <input class="input-field" type="text" id="email" placeholder="Seu Email" required [(ngModel)]="userModel.email" name="email">
             
-            <label for="senha">Senha</label>
-            <input class="input-field" type="password" id="senha" placeholder="****" required [(ngModel)]="userModel.senha" name="senha">
+            <label for="password">Senha</label>
+            <input class="input-field" type="password" id="password" placeholder="****" required [(ngModel)]="userModel.password" name="password">
     
             <!-- <input class="input-field" type="text" id="cpf" placeholder="Seu cpf" required autocomplete="none"> -->
     

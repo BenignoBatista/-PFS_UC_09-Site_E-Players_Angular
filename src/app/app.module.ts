@@ -7,6 +7,7 @@ import { HomeComponent } from './views/home/home.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { LoginComponent } from './views/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http"; /* HttpClientModule responsavel por integrar API (simular o Insominia) */
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

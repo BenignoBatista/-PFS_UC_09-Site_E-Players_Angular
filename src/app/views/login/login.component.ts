@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +9,16 @@ import { User } from 'src/app/models/user';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private userService:UserService ) { 
+
+  }
 
   userModel = new User()
 
-  recebeDados(){
-    console.log(this.userModel)
+  logarUsuario(){
+    this.userService.register(this.userModel).subscribe( function(response){
+      console.log(response.body);
+    })
 
   }
 
