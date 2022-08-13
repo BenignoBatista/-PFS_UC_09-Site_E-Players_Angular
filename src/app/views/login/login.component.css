@@ -1,11 +1,31 @@
 /* reset */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
+.mensagem {
+    width: 100%;
+    height: 30PX;
+    margin-top: 20px;
+    color: #fa7979;
+    text-align: center;
+    }
 
-body {
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    background-color: #1E1C21 !important;
+    color: white;
+    padding: 20px;
+}
+/* body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +37,7 @@ body {
     background-color: #1E1C21;
     color: white;
     padding: 20px;
-}
+} */
 
 
 /* mobile first */

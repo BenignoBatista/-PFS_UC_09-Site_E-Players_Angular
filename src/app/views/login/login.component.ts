@@ -9,18 +9,42 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor( private userService:UserService ) { 
+  constructor(private userService: UserService) {
 
   }
 
+
+
+  //variáveis auxiliares
+  mensagem = ""
   userModel = new User()
 
-  logarUsuario(){
-    this.userService.register(this.userModel).subscribe( function(response){
-      console.log(response.body);
-    })
+  logarUsuario() {
+    this.userService.signin(this.userModel).subscribe({
+      next:(response) => {//sucesso
+        console.log(response);
 
+        this.mensagem = "Login feito com sucesso"
+      },
+      error: (err) => {//erro
+        console.log(err);
+
+        this.mensagem = err.error
+      }
+    } )
   }
+
+  // logarUsuario() {
+  //   this.userService.signin(this.userModel).subscribe( (response) => {//quando tudo der certo
+  //     console.log(response);
+
+  //     this.mensagem = "Mensagem do Professor"
+
+  //   },(err)=>{//quando der erro
+  //     this.mensagem = err.error;
+  //     console.log('ERRO CAPTURADO PELO BENIGNO BATISTA',err);
+  //   })
+  // }
 
   ngOnInit(): void {
   }
